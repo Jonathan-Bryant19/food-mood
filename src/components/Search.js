@@ -9,9 +9,10 @@ function Search({setSearch, handleOnChange}) {
           Search by Name: <input onChange={(e) => setSearch(e.target.value)} className="prompt" />
           Search by Distance: 
           <select onChange={handleOnChange}>
-              <option>5</option>
               <option>10</option>
               <option>15</option>
+              <option>25</option>
+              <option>50</option>
           </select>
         </div>
       </div>
