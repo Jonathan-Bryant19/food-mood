@@ -1,5 +1,5 @@
 {
-    "Restraunts":[
+    "Restaurants":[
         {
             "id": 1,
             "name": "Adam's Pizza",
@@ -108,7 +108,7 @@
     ],
     "Order-History":[
         {
-            "restraunt":"name",
+            "restaurant":"name",
             "order":{
             }
         }
