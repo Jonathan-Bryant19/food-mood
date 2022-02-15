@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className='topnav'>
         <NavLink exact to='/'>Home</NavLink>
-        <NavLink to='/cart'>Orders</NavLink>
+        <NavLink to='/cart'>Cart</NavLink>
         <NavLink to='/history'>History</NavLink>
     </div>
   )
