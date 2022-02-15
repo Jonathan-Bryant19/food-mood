@@ -21,7 +21,7 @@
             "name": "Byron's Smokehouse",
             "image": "https://i.ibb.co/C5CQPdJ/download.png",
             "distance":10,
-            "Menu": {
+            "menu": {
                 "Brisket":3.00,
                 "Pulled pork":0.00,
                 "Cole Slaw": 1.50,
@@ -56,7 +56,7 @@
             "name": "Pho kitchen",
             "image": "https://i.ibb.co/C5CQPdJ/download.png",
             "distance":20,
-            "Menu": {
+            "menu": {
                 "Brisket":3.00,
                 "Pulled pork":0.00,
                 "Cole Slaw": 1.50,
@@ -91,7 +91,7 @@
             "name": "bookie baki",
             "image": "https://i.ibb.co/C5CQPdJ/download.png",
             "distance": 50,
-            "Menu": {
+            "menu": {
                 "Brisket":3.00,
                 "Pulled pork":0.00,
                 "Cole Slaw": 1.50,
