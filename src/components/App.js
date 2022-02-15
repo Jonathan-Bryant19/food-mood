@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Cart from './Cart';
 import History from './History'
+import Menu from './Menu'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <h1>Welcome, User!</h1>
       </div>
       <Navbar />
+
 
       <Switch>
         <Route exact path="/">
@@ -26,6 +28,10 @@ function App() {
 
         <Route path="/history">
           <History/>
+        </Route>
+
+        <Route path="/menu/:id">
+          <Menu/>
         </Route>
         
       </Switch>
