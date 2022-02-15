@@ -59,3 +59,9 @@ body {
   width: auto;
   height: auto;
 }
+
+table, th, td {
+  border: 1px solid black
+  
+
+}
