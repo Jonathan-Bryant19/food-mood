@@ -1,32 +1,28 @@
 body {
-
+  font-family: 'Roboto', sans-serif;
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #C50D1F;
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: gray;
+  color: white;
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: black;
   color: white;
 }
 
@@ -46,18 +42,28 @@ body {
 .card .image {
   height: 225px;
   position: relative;
-  width: 300px;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
-
-
 .card .image img {
-  max-width: 300px;
+  max-width: 100%;
   max-height: 225px;
   width: auto;
   height: auto;
+}
+
+.card:hover {
+  opacity: 0.5;
+}
+
+#logo {
+  max-height: 195px
+}
+
+#slogan {
+  margin-bottom: 25px;
 }
 
 table, th, td {

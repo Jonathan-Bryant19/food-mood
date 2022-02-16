@@ -37,8 +37,8 @@
          },
          {
             "id": 3,
-            "name": "olive garden",
-            "image": "https://c.yell.com/t_galleryFit,f_auto/1ff65c4d-a5bc-4ae4-b5d1-1c3230cb01e2_image_jpeg.jpg",
+            "name": "Olive Garden",
+            "image": "https://wgntv.com/wp-content/uploads/sites/5/2021/12/OliveGardenGettyImages-1326009258.jpg?w=1280&h=720&crop=1",
             "distance":15,
             "menu": {
                 "Cheese pizza":3.00,
@@ -53,8 +53,8 @@
         },
         {
             "id": 4,
-            "name": "Pho kitchen",
-            "image": "https://i.ibb.co/C5CQPdJ/download.png",
+            "name": "Pho Kitchen",
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/14/fc/af/f6/inside.jpg",
             "distance":20,
             "menu": {
                 "Brisket":3.00,
@@ -72,8 +72,8 @@
          },
          {
             "id": 5,
-            "name": "sinapis",
-            "image": "https://c.yell.com/t_galleryFit,f_auto/1ff65c4d-a5bc-4ae4-b5d1-1c3230cb01e2_image_jpeg.jpg",
+            "name": "Sinapis",
+            "image": "https://mexicali.org/wp-content/uploads/2012/06/Sinapsis-Cafe.jpg",
             "distance":25,
             "menu": {
                 "Cheese pizza":3.00,
@@ -88,8 +88,8 @@
         },
         {
             "id": 6,
-            "name": "bookie baki",
-            "image": "https://i.ibb.co/C5CQPdJ/download.png",
+            "name": "Bookie Baki",
+            "image": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2020/06/baki-1400-dinner.jpg?q=50&fit=crop&w=960&h=500&dpr=1.5",
             "distance": 50,
             "menu": {
                 "Brisket":3.00,

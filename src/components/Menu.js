@@ -1,10 +1,13 @@
 import React, {useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import MenuItem from "./MenuItem"
+
+
 function Menu (){
     const [restaurant,setRestaurant] = useState("Loading")
     const { id } = useParams()
     console.log(id)
+    
     useEffect(()=>{
         fetch(`http://localhost:3001/Restaurants/${id}`)
         .then(r=>r.json())
