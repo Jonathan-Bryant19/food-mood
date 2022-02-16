@@ -4,26 +4,26 @@ import MenuItem from "./MenuItem"
 
 
 function Menu (){
+    const [fullOrder, setFullOrder] =useState([])
     const [restaurant,setRestaurant] = useState("Loading")
     const { id } = useParams()
-    console.log(id)
+    
     
     useEffect(()=>{
         fetch(`http://localhost:3001/Restaurants/${id}`)
         .then(r=>r.json())
         .then(restaurant => setRestaurant(restaurant))
     },[id])
-    console.log(restaurant)
+    
     const menu = restaurant.menu
-    console.log(menu)
-    menu && console.log(Object.keys(menu))
+    
+    // menu && console.log(Object.keys(menu))
 
     function handleSubmit(e){
         e.preventDefault()
+        console.log(typeof(fullOrder))
 
     }
-
-
 
     return(
         <>
@@ -36,7 +36,7 @@ function Menu (){
                         <th> Quantity </th>
                     </thead>
                     {menu && Object.keys(menu).map((menuItem)=>               
-                    <MenuItem id={id} menuItem={menuItem} menu={menu} />
+                    <MenuItem id={id} menuItem={menuItem} menu={menu} setFullOrder={setFullOrder} fullOrder= {fullOrder} />
                     )}
                     <tfoot>
                         <td><input type="submit"/></td> 
@@ -45,5 +45,7 @@ function Menu (){
             </form>        
         </>
     )
-    }
+}
+
+
 export default Menu;
