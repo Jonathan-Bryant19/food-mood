@@ -14,22 +14,32 @@ function Menu (){
     const menu = restaurant.menu
     console.log(menu)
     menu && console.log(Object.keys(menu))
+
+    function handleSubmit(e){
+        e.preventDefault()
+
+    }
+
+
+
     return(
         <>
-        <h1>{restaurant.name}</h1>
-        <h1>{menu && Object.keys(menu).map((menuItem)=>
-               <form className="ui form" >
-               <table style={{tableLayout:"fixed" ,width:"750px"}}>
-                   <thead>
-                    <th> Item </th>
-                    <th> Price </th>
-                    <th> Quantity </th>
-                   </thead>
-                   <MenuItem id={id} menuItem={menuItem} menu={menu}/>
-               </table>
-           </form>
-            )}
-        </h1>
+            <h1>{restaurant.name}</h1>
+            <form className="ui form" onSubmit={handleSubmit} >
+                <table style={{tableLayout:"fixed" ,width:"750px"}}>
+                    <thead>
+                        <th> Item </th>
+                        <th> Price </th>
+                        <th> Quantity </th>
+                    </thead>
+                    {menu && Object.keys(menu).map((menuItem)=>               
+                    <MenuItem id={id} menuItem={menuItem} menu={menu} />
+                    )}
+                    <tfoot>
+                        <td><input type="submit"/></td> 
+                    </tfoot>
+                </table>
+            </form>        
         </>
     )
     }

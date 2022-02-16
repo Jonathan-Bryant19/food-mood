@@ -1,11 +1,12 @@
 function MenuItem({id, menuItem, menu}) {
+    const
     return(
         <tbody key = {id}>
             <td>{menuItem} </td>
             <td>{menu[menuItem]} </td>
-            {/* <td className="ui header">Quantity</td> */}
+            
             <td>
-                <input type="number" placeholder="Quantity"/>
+                <input type="number" value="0"/>
             </td>
         </tbody>
     )
