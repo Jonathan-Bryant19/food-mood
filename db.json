@@ -1,116 +1,131 @@
 {
-    "Restaurants":[
-        {
-            "id": 1,
-            "name": "Adam's Pizza",
-            "image": "https://c.yell.com/t_galleryFit,f_auto/1ff65c4d-a5bc-4ae4-b5d1-1c3230cb01e2_image_jpeg.jpg",
-            "distance":5,
-            "menu": {
-                "Cheese pizza":3.00,
-                "peperroni pizza":0.00,
-                "soda": 1.50,
-                "meatball":4.50,
-                "chicken parm sub":6.00,
-                "meatball sub": 7.00 ,
-                "garlic knots":0.00,
-                "Chicken francese":0.00
-            }
-        },
-        {
-            "id": 2,
-            "name": "Byron's Smokehouse",
-            "image": "https://i.ibb.co/C5CQPdJ/download.png",
-            "distance":10,
-            "menu": {
-                "Brisket":3.00,
-                "Pulled pork":0.00,
-                "Cole Slaw": 1.50,
-                "Baked Beans":4.50,
-                "Corn Bread":6.00,
-                "Chili": 7.00 ,
-                "Hush Puppies":0.00,
-                "French Fires":0.00,
-                "sweet iced tea":0.00,
-                "unsweatened iced tea":2.00,
-                "soda":1.00
-            }
-         },
-         {
-            "id": 3,
-            "name": "Olive Garden",
-            "image": "https://wgntv.com/wp-content/uploads/sites/5/2021/12/OliveGardenGettyImages-1326009258.jpg?w=1280&h=720&crop=1",
-            "distance":15,
-            "menu": {
-                "Cheese pizza":3.00,
-                "peperroni pizza":0.00,
-                "soda": 1.50,
-                "meatball":4.50,
-                "chicken parm sub":6.00,
-                "meatball sub": 7.00 ,
-                "garlic knots":0.00,
-                "Chicken francese":0.00
-            }
-        },
-        {
-            "id": 4,
-            "name": "Pho Kitchen",
-            "image": "https://media-cdn.tripadvisor.com/media/photo-s/14/fc/af/f6/inside.jpg",
-            "distance":20,
-            "menu": {
-                "Brisket":3.00,
-                "Pulled pork":0.00,
-                "Cole Slaw": 1.50,
-                "Baked Beans":4.50,
-                "Corn Bread":6.00,
-                "Chili": 7.00 ,
-                "Hush Puppies":0.00,
-                "French Fires":0.00,
-                "sweet iced tea":0.00,
-                "unsweatened iced tea":2.00,
-                "soda":1.00
-            }
-         },
-         {
-            "id": 5,
-            "name": "Sinapis",
-            "image": "https://mexicali.org/wp-content/uploads/2012/06/Sinapsis-Cafe.jpg",
-            "distance":25,
-            "menu": {
-                "Cheese pizza":3.00,
-                "peperroni pizza":0.00,
-                "soda": 1.50,
-                "meatball":4.50,
-                "chicken parm sub":6.00,
-                "meatball sub": 7.00 ,
-                "garlic knots":0.00,
-                "Chicken francese":0.00
-            }
-        },
-        {
-            "id": 6,
-            "name": "Bookie Baki",
-            "image": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2020/06/baki-1400-dinner.jpg?q=50&fit=crop&w=960&h=500&dpr=1.5",
-            "distance": 50,
-            "menu": {
-                "Brisket":3.00,
-                "Pulled pork":0.00,
-                "Cole Slaw": 1.50,
-                "Baked Beans":4.50,
-                "Corn Bread":6.00,
-                "Chili": 7.00 ,
-                "Hush Puppies":0.00,
-                "French Fires":0.00,
-                "sweet iced tea":0.00,
-                "unsweatened iced tea":2.00,
-                "soda":1.00
-            }
-         }
-    ],
-    "Order-History":[
-        {
-            "restaurant":"name",
-            "order":{
-            }
-        }
-    ]
+  "Restaurants": [
+    {
+      "id": 1,
+      "name": "Adam's Pizza",
+      "image": "https://c.yell.com/t_galleryFit,f_auto/1ff65c4d-a5bc-4ae4-b5d1-1c3230cb01e2_image_jpeg.jpg",
+      "distance": 5,
+      "menu": {
+        "Cheese pizza": 3,
+        "peperroni pizza": 0,
+        "soda": 1.5,
+        "meatball": 4.5,
+        "chicken parm sub": 6,
+        "meatball sub": 7,
+        "garlic knots": 0,
+        "Chicken francese": 0
+      }
+    },
+    {
+      "id": 2,
+      "name": "Byron's Smokehouse",
+      "image": "https://i.ibb.co/C5CQPdJ/download.png",
+      "distance": 10,
+      "menu": {
+        "Brisket": 3,
+        "Pulled pork": 0,
+        "Cole Slaw": 1.5,
+        "Baked Beans": 4.5,
+        "Corn Bread": 6,
+        "Chili": 7,
+        "Hush Puppies": 0,
+        "French Fires": 0,
+        "sweet iced tea": 0,
+        "unsweatened iced tea": 2,
+        "soda": 1
+      }
+    },
+    {
+      "id": 3,
+      "name": "Olive Garden",
+      "image": "https://wgntv.com/wp-content/uploads/sites/5/2021/12/OliveGardenGettyImages-1326009258.jpg?w=1280&h=720&crop=1",
+      "distance": 15,
+      "menu": {
+        "Cheese pizza": 3,
+        "peperroni pizza": 0,
+        "soda": 1.5,
+        "meatball": 4.5,
+        "chicken parm sub": 6,
+        "meatball sub": 7,
+        "garlic knots": 0,
+        "Chicken francese": 0
+      }
+    },
+    {
+      "id": 4,
+      "name": "Pho Kitchen",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/14/fc/af/f6/inside.jpg",
+      "distance": 20,
+      "menu": {
+        "Brisket": 3,
+        "Pulled pork": 0,
+        "Cole Slaw": 1.5,
+        "Baked Beans": 4.5,
+        "Corn Bread": 6,
+        "Chili": 7,
+        "Hush Puppies": 0,
+        "French Fires": 0,
+        "sweet iced tea": 0,
+        "unsweatened iced tea": 2,
+        "soda": 1
+      }
+    },
+    {
+      "id": 5,
+      "name": "Sinapis",
+      "image": "https://mexicali.org/wp-content/uploads/2012/06/Sinapsis-Cafe.jpg",
+      "distance": 25,
+      "menu": {
+        "Cheese pizza": 3,
+        "peperroni pizza": 0,
+        "soda": 1.5,
+        "meatball": 4.5,
+        "chicken parm sub": 6,
+        "meatball sub": 7,
+        "garlic knots": 0,
+        "Chicken francese": 0
+      }
+    },
+    {
+      "id": 6,
+      "name": "Bookie Baki",
+      "image": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2020/06/baki-1400-dinner.jpg?q=50&fit=crop&w=960&h=500&dpr=1.5",
+      "distance": 50,
+      "menu": {
+        "Brisket": 3,
+        "Pulled pork": 0,
+        "Cole Slaw": 1.5,
+        "Baked Beans": 4.5,
+        "Corn Bread": 6,
+        "Chili": 7,
+        "Hush Puppies": 0,
+        "French Fires": 0,
+        "sweet iced tea": 0,
+        "unsweatened iced tea": 2,
+        "soda": 1
+      }
+    }
+  ],
+  "Order-History": [
+    {
+      "restaurant": {
+        "restaurantName": "Olive Garden"
+      },
+      "order": {
+        "fullOrder": [
+          {
+            "quantity": 4,
+            "price": 0,
+            "food": "peperroni pizza"
+          },
+          {
+            "quantity": 3,
+            "price": 0,
+            "food": "garlic knots"
+          }
+        ]
+      },
+      "id": 1
+    }
+  ]
 }

@@ -19,7 +19,7 @@ function MenuItem({id, menuItem, menu, setFullOrder, fullOrder}) {
             food : food
         })
         const menuFilter = fullOrder.findIndex(element=> element.food === food)
-            console.log (menuFilter)
+            
 
 
         if (menuFilter == -1 ) {
@@ -36,23 +36,12 @@ function MenuItem({id, menuItem, menu, setFullOrder, fullOrder}) {
         })
 
         } else {
-            // setFullOrder[menuFilter].quantity((quantity)=>{quantity})
-            // console.log(fullOrder)
+            fullOrder[menuFilter].quantity = fullOrder[menuFilter].quantity + 1
 
-
-            // setFullOrder(()=>{
-            //     const newOrder = [...fullOrder,
-            //         {
-                        
-            //         }
-            //     ]
-            // })
-            
         }
             
 
     }
-    console.log(fullOrder)
 
     return(
         <tbody key = {id}>

@@ -17,12 +17,27 @@ function Menu (){
     
     const menu = restaurant.menu
     
+    const restaurantName = restaurant.name
+    console.log(restaurantName)
+
+    const postOrder =
+        {
+          "restaurant": {restaurantName},
+          "order": {fullOrder}
+        }
+
     // menu && console.log(Object.keys(menu))
 
     function handleSubmit(e){
         e.preventDefault()
-        console.log(typeof(fullOrder))
-
+        console.log(fullOrder)
+        fetch('http://localhost:3001/Order-History/', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(postOrder),
+        })
     }
 
     return(
