@@ -108,23 +108,19 @@
   ],
   "Order-History": [
     {
-      "restaurant": {
-        "restaurantName": "Olive Garden"
-      },
-      "order": {
-        "fullOrder": [
-          {
-            "quantity": 4,
-            "price": 0,
-            "food": "peperroni pizza"
-          },
-          {
-            "quantity": 3,
-            "price": 0,
-            "food": "garlic knots"
-          }
-        ]
-      },
+      "restaurant": "Adam's Pizza",
+      "order": [
+        {
+          "quantity": 2,
+          "price": 3,
+          "food": "Cheese pizza"
+        },
+        {
+          "quantity": 3,
+          "price": 1.5,
+          "food": "soda"
+        }
+      ],
       "id": 1
     }
   ]

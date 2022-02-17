@@ -11,12 +11,12 @@ function Search({setSearch, handleOnChange}) {
           </div>
           <div className='col'>
             Search by Distance: 
-            <select onChange={handleOnChange}>
-              <option value="selected" selected disabled>Select a Distance</option>
-              <option>10</option>
-              <option>15</option>
-              <option>25</option>
-              <option>50</option>
+            <select defaultValue="select" onChange={handleOnChange}>
+              <option value="select" disabled>Select a Distance</option>
+              <option >10</option>
+              <option >15</option>
+              <option >25</option>
+              <option >50</option>
             </select>
           </div>
         </div>

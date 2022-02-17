@@ -1,7 +1,6 @@
 import React,{useState} from 'react'
 
-function MenuItem({id, menuItem, menu, setFullOrder, fullOrder}) {
-   
+function MenuItem({id, menuItem, menu, setFullOrder, fullOrder}) {   
     const price = menu[menuItem]
     const food = menuItem
     const [menuOrder,setMenuOrder] = useState({
@@ -10,9 +9,7 @@ function MenuItem({id, menuItem, menu, setFullOrder, fullOrder}) {
         food : food
     })
 
-
     function handleMenuInput(e){
-
         setMenuOrder({
             quantity:parseInt(e.target.value),
             price : price,
@@ -20,8 +17,6 @@ function MenuItem({id, menuItem, menu, setFullOrder, fullOrder}) {
         })
         const menuFilter = fullOrder.findIndex(element=> element.food === food)
             
-
-
         if (menuFilter == -1 ) {
             setFullOrder(()=>{
                 const newOrder = [...fullOrder,
@@ -31,25 +26,22 @@ function MenuItem({id, menuItem, menu, setFullOrder, fullOrder}) {
                     food : food
                     }
                 ]
-                return newOrder
-                
+                return newOrder 
         })
-
         } else {
             fullOrder[menuFilter].quantity = fullOrder[menuFilter].quantity + 1
-
         }
-            
-
     }
 
     return(
         <tbody key = {id}>
-            <td>{food} </td>
-            <td>{price} </td>
-            <td>
-                <input onChange={handleMenuInput}type={"number"} min={"0"} defaultValue={0} />
-            </td>
+            <tr>
+                <td>{food} </td>
+                <td>{price} </td>
+                <td>
+                    <input onChange={handleMenuInput}type={"number"} min={"0"} defaultValue={0} className={'border border-danger'}/>
+                </td>
+            </tr>
         </tbody>
     )
 }

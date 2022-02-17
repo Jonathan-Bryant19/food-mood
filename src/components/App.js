@@ -8,7 +8,6 @@ import Menu from './Menu'
 
 function App() {
 
-
   return (
     <>
       <Navbar />

@@ -7,6 +7,7 @@ function Menu (){
     const [fullOrder, setFullOrder] =useState([])
     const [restaurant,setRestaurant] = useState("Loading")
     const { id } = useParams()
+    const [isSubmitted, setIsSubmitted] = useState(false)
     
     
     useEffect(()=>{
@@ -18,12 +19,11 @@ function Menu (){
     const menu = restaurant.menu
     
     const restaurantName = restaurant.name
-    console.log(restaurantName)
 
     const postOrder =
         {
-          "restaurant": {restaurantName},
-          "order": {fullOrder}
+          "restaurant": restaurantName,
+          "order": fullOrder
         }
 
     // menu && console.log(Object.keys(menu))
@@ -38,27 +38,44 @@ function Menu (){
             },
             body: JSON.stringify(postOrder),
         })
+        setIsSubmitted(!isSubmitted)
     }
 
+
     return(
-        <>
-            <h1>{restaurant.name}</h1>
+        <div className={'container'}>
+            <h1 align={"center"} className={"mt-3 mb-3"}><em>{restaurant.name}</em></h1>
             <form className="ui form" onSubmit={handleSubmit} >
-                <table style={{tableLayout:"fixed" ,width:"750px"}}>
+                <table align={"center"} style={{tableLayout:"fixed" ,width:"750px"}}>
                     <thead>
-                        <th> Item </th>
-                        <th> Price </th>
-                        <th> Quantity </th>
+                        <tr>
+                            <th className='text-center bg-danger'><em>Item</em></th>
+                            <th className='text-center bg-danger'><em>Price</em></th>
+                            <th className='text-center bg-danger'><em>Quantity</em></th>
+                        </tr>
                     </thead>
                     {menu && Object.keys(menu).map((menuItem)=>               
-                    <MenuItem id={id} menuItem={menuItem} menu={menu} setFullOrder={setFullOrder} fullOrder= {fullOrder} />
+                    <MenuItem key={menuItem} id={id} menuItem={menuItem} menu={menu} setFullOrder={setFullOrder} fullOrder= {fullOrder} />
                     )}
                     <tfoot>
-                        <td><input type="submit"/></td> 
+                        <tr>
+                            { isSubmitted ? 
+                                <td><button className={"btn btn-primary"} type="submit">
+                                <span className={"spinner-border spinner-border-sm"} role="status" aria-hidden="true"></span>
+                                Submitting Order...
+                                </button></td>
+                                :
+                                <td><button type="submit" className={"btn btn-primary"}>Place Your Order</button></td>
+                            }
+                            {/* <td><input type={"submit"} value={"Place Your Order"}/></td>  */}
+                        </tr>
                     </tfoot>
                 </table>
-            </form>        
-        </>
+            </form>
+            
+
+
+        </div>
     )
 }
 
