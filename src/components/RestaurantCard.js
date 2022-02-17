@@ -9,8 +9,8 @@ function RestaurantCard( {restaurant} ){
     }
     
     return(
-        <div onClick ={openMenu} className="card shadow-lg">
-           <h2>{restaurant.name}</h2> 
+        <div style={{border: "5px solid #C60C20"}}onClick ={openMenu} className="card shadow-lg">
+           <h2 style={{fontFamily: "Amaranth"}}>{restaurant.name}</h2> 
            <img className ="image" src= {restaurant.image} alt={restaurant.name}></img> 
         </div>
 

@@ -19,6 +19,7 @@ function MenuItem({id, menuItem, menu, setFullOrder, fullOrder}) {
             
         if (menuFilter == -1 ) {
             setFullOrder(()=>{
+                console.log(e.target.value)
                 const newOrder = [...fullOrder,
                     {
                     quantity:parseInt(e.target.value),
@@ -30,16 +31,17 @@ function MenuItem({id, menuItem, menu, setFullOrder, fullOrder}) {
         })
         } else {
             fullOrder[menuFilter].quantity = fullOrder[menuFilter].quantity + 1
+            // WE'RE CHANGING STATE WITHOUT A SETTER FUNCTION!!!!
         }
     }
-
+    
     return(
         <tbody key = {id}>
             <tr>
                 <td>{food} </td>
                 <td>{price} </td>
                 <td>
-                    <input onChange={handleMenuInput}type={"number"} min={"0"} defaultValue={0} className={'border border-danger'}/>
+                    <input onChange={handleMenuInput} type="number" min={"0"} defaultValue={0} className={'border border-danger'}/>
                 </td>
             </tr>
         </tbody>

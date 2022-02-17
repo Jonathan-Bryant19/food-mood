@@ -33,13 +33,13 @@ function Home() {
         <div className='container'>
             <div className='row' align="center">
                 <div className='col' align="center" id={'logo'}>
-                    <img src={logo} alt={"logo"} ></img>
+                    <img style={{maxWidth: "1200px"}}src="https://res.cloudinary.com/april-skrine/image/upload/v1645136566/logopizza_dta8rg.png" alt={"logo"} ></img>
                 </div>
-            <div className={'row'} align={"center"}>
+            {/* <div className={'row'} align={"center"}>
                 <div className={'col'} align={'center'} id={'slogan'}>
                     <h3><em>We got the food for your mood!</em></h3>
                 </div>
-            </div>
+            </div> */}
             <div className='row' align="center">
                 <div className='col' align="center">
                     <Search setSearch={setSearch} handleOnChange={handleOnChange} />

@@ -18,7 +18,7 @@ function Menu (){
         isSubmitted? setTimeout(()=>{
             setIsSubmitted((isSubmitted) => !isSubmitted)
             openCart()
-        },2000):console.log("1")
+        },2000):console.log("timer ended")
 
     },[isSubmitted])
     
