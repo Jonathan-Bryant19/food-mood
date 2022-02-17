@@ -18,12 +18,13 @@ function Cart() {
     mostRecentOrder.order.forEach(element => {
       totalArr.push(element.price * element.quantity)
     })
-    console.log(totalArr)
+    console.log(currentCart)
     const initialValue = 0
     const testTotal = totalArr.reduce((pv, cv) => pv + cv, initialValue)
     
     return (
       <div className={'container pt-5'}>
+        <h1 className={'text-center'}>{mostRecentOrder.restaurant}</h1>
         <table style={{width:'100%' }}>
           <tbody>
             <tr> 
