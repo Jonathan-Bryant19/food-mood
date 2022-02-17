@@ -17,9 +17,7 @@ function Menu (){
     },[id])
     
     const menu = restaurant.menu
-    
     const restaurantName = restaurant.name
-
     const postOrder =
         {
           "restaurant": restaurantName,
