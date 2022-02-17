@@ -111,7 +111,7 @@
       "restaurant": "Adam's Pizza",
       "order": [
         {
-          "quantity": 2,
+          "quantity": 4,
           "price": 3,
           "food": "Cheese pizza"
         },
@@ -119,6 +119,21 @@
           "quantity": 3,
           "price": 1.5,
           "food": "soda"
+        },
+        {
+          "quantity": 3,
+          "price": 6,
+          "food": "chicken parm sub"
+        },
+        {
+          "quantity": 3,
+          "price": 0,
+          "food": "garlic knots"
+        },
+        {
+          "quantity": 2,
+          "price": 0,
+          "food": "Chicken francese"
         }
       ],
       "id": 1
@@ -127,183 +142,71 @@
       "restaurant": "Byron's Smokehouse",
       "order": [
         {
+          "quantity": 4,
+          "price": 0,
+          "food": "Pulled pork"
+        },
+        {
+          "quantity": 2,
+          "price": 4.5,
+          "food": "Baked Beans"
+        },
+        {
           "quantity": 6,
-          "price": 3,
-          "food": "Brisket"
+          "price": 0,
+          "food": "Hush Puppies"
+        },
+        {
+          "quantity": 4,
+          "price": 2,
+          "food": "unsweatened iced tea"
         }
       ],
       "id": 2
     },
     {
-      "restaurant": "Olive Garden",
+      "restaurant": "Byron's Smokehouse",
       "order": [
         {
-          "quantity": 6,
-          "price": 1,
-          "food": "peperroni pizza"
-        },
-        {
-          "quantity": 4,
-          "price": 2,
-          "food": "garlic knots"
+          "quantity": null,
+          "price": 0,
+          "food": "Hush Puppies"
         }
       ],
       "id": 3
     },
     {
-      "restaurant": "Pho Kitchen",
+      "restaurant": "Byron's Smokehouse",
       "order": [
         {
-          "quantity": 3,
-          "price": 0,
-          "food": "Pulled pork"
-        },
-        {
-          "quantity": 2,
-          "price": 1.5,
-          "food": "Cole Slaw"
-        },
-        {
-          "quantity": 1,
-          "price": 4.5,
-          "food": "Baked Beans"
-        },
-        {
-          "quantity": 2,
+          "quantity": 10,
           "price": 7,
           "food": "Chili"
-        },
-        {
-          "quantity": 2,
-          "price": 0,
-          "food": "French Fires"
-        },
-        {
-          "quantity": 2,
-          "price": 2,
-          "food": "unsweatened iced tea"
         }
       ],
       "id": 4
     },
     {
-      "restaurant": "Pho Kitchen",
+      "restaurant": "Byron's Smokehouse",
       "order": [
         {
-          "quantity": 3,
+          "quantity": 116,
           "price": 0,
-          "food": "Pulled pork"
-        },
-        {
-          "quantity": 2,
-          "price": 1.5,
-          "food": "Cole Slaw"
-        },
-        {
-          "quantity": 1,
-          "price": 4.5,
-          "food": "Baked Beans"
-        },
-        {
-          "quantity": 2,
-          "price": 7,
-          "food": "Chili"
-        },
-        {
-          "quantity": 2,
-          "price": 0,
-          "food": "French Fires"
-        },
-        {
-          "quantity": 2,
-          "price": 2,
-          "food": "unsweatened iced tea"
+          "food": "Hush Puppies"
         }
       ],
       "id": 5
     },
     {
-      "restaurant": "Pho Kitchen",
-      "order": [
-        {
-          "quantity": 6,
-          "price": 0,
-          "food": "Pulled pork"
-        },
-        {
-          "quantity": 2,
-          "price": 1.5,
-          "food": "Cole Slaw"
-        },
-        {
-          "quantity": 1,
-          "price": 4.5,
-          "food": "Baked Beans"
-        },
-        {
-          "quantity": 2,
-          "price": 7,
-          "food": "Chili"
-        },
-        {
-          "quantity": 4,
-          "price": 0,
-          "food": "French Fires"
-        },
-        {
-          "quantity": 2,
-          "price": 2,
-          "food": "unsweatened iced tea"
-        },
-        {
-          "quantity": 2,
-          "price": 3,
-          "food": "Brisket"
-        },
-        {
-          "quantity": 2,
-          "price": 6,
-          "food": "Corn Bread"
-        }
-      ],
-      "id": 6
-    },
-    {
-      "restaurant": "Pho Kitchen",
-      "order": [
-        {
-          "quantity": 2,
-          "price": 3,
-          "food": "Brisket"
-        },
-        {
-          "quantity": 2,
-          "price": 1.5,
-          "food": "Cole Slaw"
-        },
-        {
-          "quantity": 2,
-          "price": 4.5,
-          "food": "Baked Beans"
-        },
-        {
-          "quantity": 1,
-          "price": 6,
-          "food": "Corn Bread"
-        }
-      ],
-      "id": 7
-    },
-    {
       "restaurant": "Byron's Smokehouse",
       "order": [
         {
-          "quantity": 5,
-          "price": 3,
-          "food": "Brisket"
+          "quantity": null,
+          "price": 0,
+          "food": "French Fires"
         }
       ],
-      "id": 8
+      "id": 6
     }
   ]
 }

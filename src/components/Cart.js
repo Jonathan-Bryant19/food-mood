@@ -19,8 +19,8 @@ function Cart() {
       totalArr.push(element.price * element.quantity)
     })
     console.log(currentCart)
-    const initialValue = 0
-    const testTotal = totalArr.reduce((pv, cv) => pv + cv, initialValue)
+    
+    const testTotal = totalArr.reduce((pv, cv) => pv + cv, 0)
     
     return (
       <div className={'container pt-5'}>

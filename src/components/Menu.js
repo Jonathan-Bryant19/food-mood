@@ -1,6 +1,7 @@
 import React, {useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import MenuItem from "./MenuItem"
+import { useHistory } from  'react-router-dom'
 
 
 function Menu (){
@@ -8,8 +9,21 @@ function Menu (){
     const [restaurant,setRestaurant] = useState("Loading")
     const { id } = useParams()
     const [isSubmitted, setIsSubmitted] = useState(false)
+    const history = useHistory()
+    function openCart() {
+        history.push(`/cart`)
+    }
+
+    useEffect(()=>{
+        isSubmitted? setTimeout(()=>{
+            setIsSubmitted((isSubmitted) => !isSubmitted)
+            openCart()
+        },2000):console.log("1")
+
+    },[isSubmitted])
     
-    
+
+
     useEffect(()=>{
         fetch(`http://localhost:3001/Restaurants/${id}`)
         .then(r=>r.json())
@@ -36,9 +50,12 @@ function Menu (){
             },
             body: JSON.stringify(postOrder),
         })
-        setIsSubmitted(!isSubmitted)
+        
+        !isSubmitted? setIsSubmitted((isSubmitted)=>!isSubmitted) : console.log("idk")
+        
     }
-
+    
+    
 
     return(
         <div className={'container'}>
