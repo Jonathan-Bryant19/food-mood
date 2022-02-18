@@ -89,6 +89,12 @@ body {
 
 table, th, td {
   border: 1px solid black
-  
+}
 
+.orderList {
+  margin-left: 300px;
+}
+
+.totalList {
+  margin-left: 140px;
 }

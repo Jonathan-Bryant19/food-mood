@@ -40,12 +40,12 @@ function Cart() {
               return <CartTableItem key={item.food} item={item}/>
             })}
             <tr>
-              <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>Subtotal: {`$${subTotal}`}</td>
-              <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>DeliveryFee: {`$${deliveryFee}`}</td>
-              <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>Tax: {`$${tax}`}</td>
+              <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>Subtotal: {`$${subTotal.toFixed(2)}`}</td>
+              <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>DeliveryFee: {`$${deliveryFee.toFixed(2)}`}</td>
+              <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>Tax: {`$${tax.toFixed(2)}`}</td>
             </tr>
             <tr>
-            <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>Total: {`$${total}`}</td>
+            <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>Total: {`$${total.toFixed(2)}`}</td>
             </tr>
           </tbody>   
         </table> 
