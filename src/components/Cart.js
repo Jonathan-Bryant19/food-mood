@@ -20,7 +20,10 @@ function Cart() {
     })
     console.log(currentCart)
     
-    const testTotal = totalArr.reduce((pv, cv) => pv + cv, 0)
+    const subTotal = totalArr.reduce((pv, cv) => pv + cv, 0)
+    const deliveryFee = +(mostRecentOrder.distance)*.5
+    const tax = subTotal*.08
+    const total = subTotal + deliveryFee + tax
     
     return (
       <div className={'container pt-5'}>
@@ -29,15 +32,20 @@ function Cart() {
           <tbody>
             <tr> 
               <th style={{fontFamily: "Amaranth", fontSize: "22px"}} className='text-center bg-danger'><em>Product</em></th>
-              <th style={{fontFamily: "Amaranth", fontSize: "22px"}} className='text-center bg-danger'><em>Price</em></th>
               <th style={{fontFamily: "Amaranth", fontSize: "22px"}} className='text-center bg-danger'><em>Quantity</em></th>
-              <th style={{fontFamily: "Amaranth", fontSize: "22px"}} className='text-center bg-danger'><em>Total</em></th>
+              <th style={{fontFamily: "Amaranth", fontSize: "22px"}} className='text-center bg-danger'><em>Price</em></th>
+              
             </tr>
             {mostRecentOrder.order.map((item) => {
               return <CartTableItem key={item.food} item={item}/>
             })}
             <tr>
-              <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>Subtotal: {`$${testTotal}`}</td>
+              <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>Subtotal: {`$${subTotal}`}</td>
+              <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>DeliveryFee: {`$${deliveryFee}`}</td>
+              <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>Tax: {`$${tax}`}</td>
+            </tr>
+            <tr>
+            <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>Total: {`$${total}`}</td>
             </tr>
           </tbody>   
         </table> 

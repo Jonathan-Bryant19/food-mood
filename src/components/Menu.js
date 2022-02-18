@@ -32,9 +32,11 @@ function Menu (){
     
     const menu = restaurant.menu
     const restaurantName = restaurant.name
+    const distance = restaurant.distance
     const postOrder =
         {
           "restaurant": restaurantName,
+          "distance": distance,
           "order": fullOrder
         }
 
