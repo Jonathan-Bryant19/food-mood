@@ -7,13 +7,13 @@
       "distance": 5,
       "menu": {
         "Cheese pizza": 3,
-        "peperroni pizza": 0,
+        "peperroni pizza": 4,
         "soda": 1.5,
         "meatball": 4.5,
         "chicken parm sub": 6,
         "meatball sub": 7,
-        "garlic knots": 0,
-        "Chicken francese": 0
+        "garlic knots": 3.75,
+        "Chicken francese": 12
       }
     },
     {
@@ -22,15 +22,15 @@
       "image": "https://i.ibb.co/C5CQPdJ/download.png",
       "distance": 10,
       "menu": {
-        "Brisket": 3,
-        "Pulled pork": 0,
+        "Brisket": 8,
+        "Pulled pork": 7,
         "Cole Slaw": 1.5,
         "Baked Beans": 4.5,
         "Corn Bread": 6,
         "Chili": 7,
-        "Hush Puppies": 0,
-        "French Fires": 0,
-        "sweet iced tea": 0,
+        "Hush Puppies": 3,
+        "French Fires": 3.5,
+        "sweet iced tea": 2,
         "unsweatened iced tea": 2,
         "soda": 1
       }
@@ -42,13 +42,13 @@
       "distance": 15,
       "menu": {
         "Cheese pizza": 3,
-        "peperroni pizza": 0,
+        "peperroni pizza": 3.5,
         "soda": 1.5,
         "meatball": 4.5,
         "chicken parm sub": 6,
         "meatball sub": 7,
-        "garlic knots": 0,
-        "Chicken francese": 0
+        "garlic knots": 3.5,
+        "Chicken francese": 12
       }
     },
     {
@@ -58,14 +58,14 @@
       "distance": 20,
       "menu": {
         "Brisket": 3,
-        "Pulled pork": 0,
+        "Pulled pork": 6,
         "Cole Slaw": 1.5,
         "Baked Beans": 4.5,
         "Corn Bread": 6,
         "Chili": 7,
-        "Hush Puppies": 0,
-        "French Fires": 0,
-        "sweet iced tea": 0,
+        "Hush Puppies": 3,
+        "French Fires": 3.5,
+        "sweet iced tea": 2,
         "unsweatened iced tea": 2,
         "soda": 1
       }
@@ -77,13 +77,13 @@
       "distance": 25,
       "menu": {
         "Cheese pizza": 3,
-        "peperroni pizza": 0,
+        "peperroni pizza": 3.5,
         "soda": 1.5,
         "meatball": 4.5,
         "chicken parm sub": 6,
         "meatball sub": 7,
-        "garlic knots": 0,
-        "Chicken francese": 0
+        "garlic knots": 3,
+        "Chicken francese": 12
       }
     },
     {
@@ -92,15 +92,15 @@
       "image": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2020/06/baki-1400-dinner.jpg?q=50&fit=crop&w=960&h=500&dpr=1.5",
       "distance": 50,
       "menu": {
-        "Brisket": 3,
-        "Pulled pork": 0,
+        "Brisket": 8,
+        "Pulled pork": 6,
         "Cole Slaw": 1.5,
         "Baked Beans": 4.5,
         "Corn Bread": 6,
         "Chili": 7,
-        "Hush Puppies": 0,
-        "French Fires": 0,
-        "sweet iced tea": 0,
+        "Hush Puppies": 3,
+        "French Fires": 3.5,
+        "sweet iced tea": 2,
         "unsweatened iced tea": 2,
         "soda": 1
       }
