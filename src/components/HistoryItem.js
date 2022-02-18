@@ -8,7 +8,10 @@ function HistoryItem({item}) {
     })
     
     
-    const total = totalArr.reduce((pv, cv) => pv + cv, 0)
+    const subTotal = totalArr.reduce((pv, cv) => pv + cv, 0)
+    const deliveryFee = +(item.distance)*.5
+    const tax = subTotal*.08
+    const total = subTotal + deliveryFee + tax
 
 
   return (
@@ -23,7 +26,11 @@ function HistoryItem({item}) {
                             <li style={{fontFamily: "Amaranth", fontSize: "22px"}} key= {item.food}>{`${item.food} (x${item.quantity}) $${item.quantity*item.price}`}</li>
                         )
                     } )}
+                    <li style={{fontFamily: "Amaranth", fontSize: "24px"}}>{`SubTotal: $${subTotal}`}</li>
+                    <li style={{fontFamily: "Amaranth", fontSize: "24px"}}>{`Tax: $${tax}`}</li>
+                    <li style={{fontFamily: "Amaranth", fontSize: "24px"}}>{`Delivery Fee: $${deliveryFee}`}</li>
                     <li style={{fontFamily: "Amaranth", fontSize: "24px"}}>{`Total: $${total}`}</li>
+
                 </ul>}
               </div>
         </div>

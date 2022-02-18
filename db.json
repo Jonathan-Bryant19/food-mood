@@ -392,32 +392,6 @@
     }
   ],
   "Order-History": [
-    {
-      "restaurant": "Byron's Smokehouse",
-      "distance": 10,
-      "order": [
-        {
-          "quantity": 3,
-          "price": 3,
-          "food": "Brisket"
-        },
-        {
-          "quantity": 3,
-          "price": 1.5,
-          "food": "Cole Slaw"
-        },
-        {
-          "quantity": 3,
-          "price": 0,
-          "food": "Hush Puppies"
-        },
-        {
-          "quantity": 3,
-          "price": 0,
-          "food": "sweet iced tea"
-        }
-      ],
-      "id": 1
-    }
+   
   ]
 }
