@@ -7,11 +7,11 @@ function Search({setSearch, handleOnChange}) {
       <div className={"container"}>
         <div className={"row gx-2"}>
           <div className={'col'}>
-            Search by Name: <input onChange={(e) => setSearch(e.target.value)} className="prompt" />
+            <label style={{fontFamily: "Amaranth", fontSize: "22px"}} className='col-form-label pe-3'>Search by Name:</label> <input style={{fontFamily: "Amaranth", fontSize: "22px"}} onChange={(e) => setSearch(e.target.value)} className="prompt" />
           </div>
           <div className='col'>
-            Search by Distance: 
-            <select defaultValue="select" onChange={handleOnChange}>
+            <label style={{fontFamily: "Amaranth", fontSize: "22px"}} className='col-form-label pe-3'>Search by Distance:</label>
+            <select style={{fontFamily: "Amaranth", fontSize: "22px"}} defaultValue="select" onChange={handleOnChange}>
               <option value="select" disabled>Select a Distance</option>
               <option >10</option>
               <option >15</option>

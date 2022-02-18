@@ -38,9 +38,9 @@ function MenuItem({id, menuItem, menu, setFullOrder, fullOrder}) {
     return(
         <tbody key = {id}>
             <tr>
-                <td>{food} </td>
-                <td>{price} </td>
-                <td>
+                <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>{food} </td>
+                <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>{price} </td>
+                <td style={{fontFamily: "Amaranth", fontSize: "22px"}}>
                     <input onChange={handleMenuInput} type="number" min={"0"} defaultValue={0} className={'border border-danger'}/>
                 </td>
             </tr>

@@ -12,18 +12,20 @@ function HistoryItem({item}) {
 
 
   return (
-    <div className="container">
-        <div className="row">
-            <h2 className="col">{item.restaurant}</h2> <button onClick={()=>setToggleExpand(toggleExpand=>!toggleExpand)}className="col">Expand Order</button>
-            {toggleExpand && 
-                <ul>
+    <div style={{width:'65%'}} className="container pt-5">
+        <div className="row border border-danger pb-2">
+            <h2 style={{fontFamily: "Amaranth", fontSize: "24px"}} className="col text-center">{item.restaurant}</h2> <button style={{maxWidth: "400px", align: "center"}} onClick={()=>setToggleExpand(toggleExpand=>!toggleExpand)}className="col expandBtn">Expand Order</button>
+            <div>
+            {toggleExpand &&                 
+                <ul className='ps-5'>
                     {item.order.map(item =>{
                         return(                 
-                            <li key= {item.food}>{`Food: ${item.food} X${item.quantity} ${item.quantity*item.price}`}</li>
+                            <li style={{fontFamily: "Amaranth", fontSize: "22px"}} key= {item.food}>{`${item.food} (x${item.quantity}) $${item.quantity*item.price}`}</li>
                         )
                     } )}
-                    <li>Total:{total}</li>
+                    <li style={{fontFamily: "Amaranth", fontSize: "24px"}}>{`Total: $${total}`}</li>
                 </ul>}
+              </div>
         </div>
             
     </div>

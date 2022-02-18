@@ -59,14 +59,14 @@ function Menu (){
 
     return(
         <div className={'container'}>
-            <h1 align={"center"} className={"mt-3 mb-3"}><em>{restaurant.name}</em></h1>
+            <h1 style={{fontFamily: "Amaranth", fontSize: "48px"}} align={"center"} className={"mt-3 mb-3"}><em>{restaurant.name}</em></h1>
             <form className="ui form" onSubmit={handleSubmit} >
                 <table align={"center"} style={{tableLayout:"fixed" ,width:"750px"}}>
                     <thead>
                         <tr>
-                            <th className='text-center bg-danger'><em>Item</em></th>
-                            <th className='text-center bg-danger'><em>Price</em></th>
-                            <th className='text-center bg-danger'><em>Quantity</em></th>
+                            <th style={{fontFamily: "Amaranth", fontSize: "24px"}} className='text-center bg-danger'><em>Item</em></th>
+                            <th style={{fontFamily: "Amaranth", fontSize: "24px"}} className='text-center bg-danger'><em>Price</em></th>
+                            <th style={{fontFamily: "Amaranth", fontSize: "24px"}} className='text-center bg-danger'><em>Quantity</em></th>
                         </tr>
                     </thead>
                     {menu && Object.keys(menu).map((menuItem)=>               
@@ -80,7 +80,7 @@ function Menu (){
                                 Submitting Order...
                                 </button></td>
                                 :
-                                <td><button type="submit" className={"btn btn-primary"}>Place Your Order</button></td>
+                                <td><button style={{fontFamily: "Amaranth", fontSize: "20px"}} type="submit" className={"btn btn-primary"}>Place Your Order</button></td>
                             }
                             {/* <td><input type={"submit"} value={"Place Your Order"}/></td>  */}
                         </tr>

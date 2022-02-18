@@ -38,6 +38,7 @@ body {
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 300px;
+  transition: 1s ease;
 }
 .card .image {
   height: 225px;
@@ -55,7 +56,27 @@ body {
 }
 
 .card:hover {
-  opacity: 0.5;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
+.expandBtn {
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color: #FCB00D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.expandBtn:active {
+  background-color: #C50D1F;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 #logo {
